@@ -4,6 +4,8 @@ void setup()
 }
 void draw()
 {
+// Setting Background Color
+background(255,255,255);
 noFill();
 strokeWeight(7.5);
 noStroke();
