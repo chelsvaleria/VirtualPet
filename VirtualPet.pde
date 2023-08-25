@@ -10,6 +10,34 @@ noStroke();
 fill(238,208,155);
 // Face Base
 ellipse(200,200,205,220);
+// Fur Coloring. Left, First Strand
+triangle(155,290,150,320,170,305);
+// Left, Second Strand
+triangle(136,280,135,305,170,305);
+// Left, Third Strand
+triangle(114,260,120,290,145,290);
+// Left, Fourth Strand
+triangle(98,220,98,275,125,270);
+// Right, First Strand
+triangle(245,290,250,320,230,305);
+//Right, Second Strand
+triangle(264,280,265,305,230,305);
+//Right, Third Strand
+triangle(286,260,280,290,255,290);
+// Right, Fourth Strand
+triangle(302,220,302,275,275,270);
+// Top Ear Coloring
+triangle(130,110,60,130,114,160);
+triangle(270,110,340,130,286,160);
+// Changing Color for Inside of Ear
+fill(255,255,255);
+// Inside Ear Coloring
+triangle(114,160,60,130,98,210);
+triangle(286,160,340,130,302,210);
+// Mouth Shading
+fill(197,161,99);
+triangle(175,260,200,280,225,260);
+// Changing Eye and Nose Color
 fill(0,0,0);
 // Nose
 ellipse(200,250,25,15);
@@ -56,10 +84,20 @@ line(286,290,286,275);
 line(114,275,98,275);
 line(286,275,302,275);
 // Fur Lines (Ninth Pair)
-line(98,275,98,250);
-line(302,275,302,250);
-// Fur Lines (Tenth Pair)
-line(160,270,200,290);
-line(160,270,200,290);
-
+line(98,275,98,210);
+line(302,275,302,210);
+// Side Head Lineart
+line(98,210,130,110);
+line(302,210,270,110);
+// Top Head Lineart
+line(130,110,200,90);
+line(270,110,200,90);
+// Left Ear
+line(130,110,60,130);
+line(98,210,60,130);
+line(114,160,60,130);
+// Right Ear
+line(270,110,340,130);
+line(302,210,340,130);
+line(286,160,340,130);
 }
