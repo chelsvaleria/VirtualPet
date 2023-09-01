@@ -1,11 +1,5 @@
-import processing.serial.*;
-import cc.arduino.*;
-Arduino arduino;
-int rButton = 0;
-
 void setup()
 {
- arduino = new Arduino(this, Arduino.list()[0], 57600);
   size(400,400);
 }
 void draw()
@@ -106,23 +100,4 @@ line(114,160,60,130);
 line(270,110,340,130);
 line(302,210,340,130);
 line(286,160,340,130);
-// Arduino Setup
-rButton = arduino.analogRead(5);
-System.out.println(rButton);
-if(rButton > 500)
-stroke(246,152,177);
-else
-stroke(246,152,177,0);
-//blush stuff
-strokeWeight(15);
-line(200,268,200,270);
-strokeWeight(8);
-// Left Side Blush
-line(115,260,140,230);
-line(130,260,155,230);
-// Right Side Blush
-line(250,260,275,230);
-line(265,260,290,230);
-}
-
 }
